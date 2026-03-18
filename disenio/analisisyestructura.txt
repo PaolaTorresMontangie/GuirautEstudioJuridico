@@ -1,0 +1,140 @@
+
+después de ver estos sitios y otros que vi anteriormente, hay 2 páginas web que me gustan mucho y lo detallo aqui:
+
+A) https://www.estudiovba.com/ (desde ahora VBA)
+
+Me gusta la claridad de navegación por la pagina (menos algunas partes). Algunas secciones muy bien logradas.
+
+SERVICIOS (AREAS DE PRACTICA) con eyebrow y titulo, baja de texto espaciosa, fondo claro, 
+3 cards cuadradas con sombra sutil blancas sobre fondo blanco, imagenes sobrias y acordes, titulo y descripcion
+
+CONFIANZA PROFESIONAL con un fondo casi negro, cards sin fondo, lineas blancas finas, iconos dorados, titulos blancos y texto blanco
+también eyebrow y titulo
+
+PROFESIONALES también está bien resuelta pero en mi caso solo tengo dos abogados así que no me sirve
+
+CASOS DE EXITO no tendrá mi pagína pero me gusta sus colores
+CONTACTO muy bien logrado. texto explicativo sobre su atención (que aplica para servicio juridico) a la izquierda,
+debajo direccion de oficinas (con titulo naranjita), al lado contacto (whatsapp e mail) , y a la derecha grande cuadro de google maps
+
+FOOTER iconos de redes demasiado pequeños, no está muy claro pero es lindo el color oscuro
+
+
+
+b) https://danielaspinelliabogada.com/index.php#hero (desde ahora DS)
+
+Me gusta toda la web con un color de fondo super oscuro y letras blancas, se ve impactante y coherente, las RRSS procucen cercania
+Me transmite seriedad por su colores de fondo oscuro y letras grandes y mucho aire, coherencia estética durante toda la pagina, hero impactante.
+
+* NAVABAR con fondo transparente, letras blancas con opacidad reducidas, en mayuscula,
+barrita debajo del link, boton de contacto a la derecha resaltdo con un borde pero sin afectar la estetica.
+
+* HERO impactante y limpio con imagen de fondo de un edificio de cristales
+grisaceo, letras imponentes en blanco, el subtitulo en mayuscula no me gusta, el boton cta azul muy oscuro me gusta.
+
+* SOBRE MI me parece un poco confuso
+* SERVICIO no me gustan las cards, los iconos son feos y tienen fondo blanco sobre fondo muy oscuro
+* TESTIMONIOS me gusta que aparezcan desde Google y vayan pasando aunque van muy rápido y el fondo del edifcio le resta claridad
+* BLOG ARTICULOS: mejor logradas las cards con imagen coherente, content de card blanco con titulos y textos en negro o azul oscuro, pequeño movimiento con hover
+* DESTACADOS: sección que muestra short de youtube y leyenda que dice "suscribite a mi canal y conoce todos los videos" aunque la estética de la abogada no me gusta
+* CONTACTO: logo, datos, redes y links, un poco cargado pero bien esteticamente
+* FOOTER. linea y debajo copyright y quien diseño (crei que esto no se usaba mas, obviamente a mi me conviene)
+
+
+concluyo que mi nuevo sitio debe tener: 
+
+* todas las secciones con sistema heading: eyebrow en mayuscula, letter espacio, fontsize pequeño y titulo capitalizado
+
+* NAVBAR siempre visible, con logo a la izquierda, link y boton a la derecha para contacto encuadrado pero sin destacard en exceso (parecido a DS)
+* HERO con una imagen corporativa grande y texto encima en tonos azules/grisaceos y letras claras (parecido DS)
+* SERVICIOS con cards espaciosas y claras. Imagenes sobrias o iconos elegantes. Podría ser como AREAS DE PRACTICA de VBA o CONFIANZA PROFESIONAL de VBA
+* NOSOTROS. comenzar con QUIENES SOMOS como VBA y después PROFESIONALES de VBA pero solo dos primero foto a la izquierda y texto a la derecha y abajo texto a la izq y foto a la derecha
+fondo claro, foto profesional, nombre como titulo, puesto mas pequeño, descripción mas grande, con pequeña sombra (puede incluir historia y la misión y valores, no tengo referencias visuales)
+* CONTACTO: informacion clara de telefono, mail y direccion, formulario de contacto y cuadro de google maps, parecido a VBA
+* FOOTER: redes sociales, linea divisoria y copyrigt abajo, podría tener una frase que destaque o links pero aun no esta del todo resuelto
+* WHATSAPP FLOTANTE siempre
+
+* colores logo y recomendados:
+#c29a4d naraja apagado
+#646667 gris
+#ac9a6e naranja apagado 2
+#5b5238 marrón apagado
+#01142b azul negro
+#20282f celeste oscuro apagado
+
+IMPORTANTE: lo que estoy buscando es definir la estructura primero para conversarla con mi cliente y la estética que quiero lograr.
+Pero quiero tener control sobre el código, retuilizar lo que ya tengo y mantener convenciones de estructura, nombres de clases y variables de colores en la medida de lo posible
+Quisiera armar un template basandome en mi pagina web que es one page y tiene ayerbrow y REUTILIZANDO MI CODIGO aunque le faltan algunas secciones.
+
+
+
+┌──────────────────────────────────────────┐
+│ NAVBAR                                   │
+│ logo | inicio servicios nosotros contacto│
+└──────────────────────────────────────────┘
+
+
+┌──────────────────────────────────────────┐
+│ HERO                                     │
+│                                          │
+│   ESTUDIO JURÍDICO                       │
+│   Guiraut & Asociados                    │
+│   Más de 30 años brindando asesoramiento │
+│                                          │
+│   [ Botón Consulta ]                     │
+│                                          │
+│      imagen edificio fondo               │
+└──────────────────────────────────────────┘
+
+
+┌──────────────────────────────────────────┐
+│ SERVICIOS / ÁREAS DE PRÁCTICA            │
+│                                          │
+│  [card]    [card]    [card]              │
+│                                          │
+│  [card]    [card]    [card]              │
+└──────────────────────────────────────────┘
+
+
+┌──────────────────────────────────────────┐
+│ CONFIANZA PROFESIONAL                    │
+│                                          │
+│   [icon]      [icon]      [icon]         │
+│   experiencia atención defensa           │
+└──────────────────────────────────────────┘
+
+
+┌──────────────────────────────────────────┐
+│ QUIÉNES SOMOS                            │
+│                                          │
+│ [imagen estudio]   texto institucional   │
+│                                          │
+└──────────────────────────────────────────┘
+
+
+┌──────────────────────────────────────────┐
+│ PROFESIONALES                            │
+│                                          │
+│ [foto] Ignacio Guiraut                   │
+│        texto                             │
+│                                          │
+│ Patricio Guiraut        [foto]           │
+│ texto                                    │
+└──────────────────────────────────────────┘
+
+
+┌──────────────────────────────────────────┐
+│ CONTACTO                                 │
+│                                          │
+│ texto + datos + formulario               │
+│                                          │
+│                    [ Google Maps ]       │
+└──────────────────────────────────────────┘
+
+
+┌──────────────────────────────────────────┐
+│ FOOTER                                   │
+│ logo                                     │
+│ redes                                    │
+│ copyright                                │
+└──────────────────────────────────────────┘
