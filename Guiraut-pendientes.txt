@@ -16,146 +16,47 @@ reseñas
 autoridad
 
 *** 
-dias transcurridos: 2 (lunes 16/03 primer dia)
-
-Día 2
-* PRESUPUESTO en base a Lowtian, precio 700 menos 20% 560 k
-
-Incluir COSTO anual de dominioIncluir COSTO mensual de hosting. Definir si es gratuito o lo quiere pagar directamente el por mes.
-Entrega 15/21 días hábiles Pago adelanto 50% 280 kDos rondas de medicaciones. Que me tiene que dar él   
-* Confirmar colores
-* Confirmar mensaje profesional pero cercano
-* Ofrecerle ejemplos de páginas web
- Armar wireframe mejor hecho
-
-DIA 3
-
-* seccion redes. 
-	que pasa con responsive
-	porque no muestra todo al carga mas?
-	vale la pena pagarlo?
-
-* repensar padding hacia adentro en container-limit y en cada content de cada seccion, peligroso
-
-DIA 4
-
-* SECTION NOSOTROS (casi listo)
-* parte superior ajustar imagen, border radius y sombrita
-* Parte inferior: basarme en examples texto al costado izquierdo con eyebrow, imagen derecha con sombra como las cards
-Buscar iconos chiquitos para resaltar educación 
+dias transcurridos: 7 (lunes 16/03 primer dia esquema + dias analisis previos)
 
 
-
-Día 5
-* Modific botones primary y secondary (si hace falta)
-Boton primary en naranja y botón secondary seguiría con fondo transparente pero hover azulado. Podría ser css de botón CTA.
-Quizás poner en variable de color las sombras
-
+CHEQUEOS 
+* chequear clamp en cosas importantes
+* tipografias: variables
 * Ver botón CTA de la navbar en Bootstrap 
+* mejorar logo y navbar (si es generico cual usar?)
+* navbar muy dorada
+* logo no me gusta como se ve
+* navbar hamburguesa: letras muy grandes
 
-* Section contacto. Tomar código plantilla para funcionalidad. Pero ver código Stitch para cuadro Google maps y organización de textos. 
-Buscar iconos pequeños
 
-Día 6
-* Definir toda la section de footer. Texto especial?
-* Dejo microtextos para eliminar fricción?
+* seccion redes. boton "cargar mas" en mobile no está centrado.
+* ? cambiar nombre sistema de titulo, que no diga section sino container_title o algo asi AMBOS
+*? ojo con navbar-brand y logotipo, se pueden unificar? (AMBOS)
 
-DÍA 7
-* Desarrollar autoridad por completo. Cuando esté casi todo listo, preguntar a chatgpt como hacerlo (replicar para mí)
-* usar infor linkeding.
-* agregar linkedin. icono redes donde va? contacto?
 
-DÍA 8
+MEJORAS
+* buscar fotos abogados
+* mejorar seccion profesionales, parecen actores con ese circulo
 * Canva buscar rascacielos desde abajo en canvas o edifcio facultad de derecho para dar enfasis en formación y no en dinero ???
 * Cambiar textos de respuesta WhatsApp de todos (al tener bien definidos los servicios)
 
-Día 9
+
+SI SALE PRESUPUESTO
 * Cuestiones técnicas. Meta, favicon, opengraph, schema, alt y palabras ocultas SEO, preload, etcétera 
-* Cambiar script para las nuevas secciones
 * Comprar dominio, cambiar dns, pruebas
-* chequear clases huerfanas y no usadas y simplificacion de codigo
-* eliminar px y rem fijo (usar clamp)
-* color todos a varibles
-* tipografias: variables
+* cambiar por textos reales
+* controlar SEO
 
 ***
 PaolaTorres
-cambiar a variables todos los colores que faltan
+
+* cambiar a variables todos los colores que faltan
+* tipografias: variables
+* ? cambiar nombre sistema de titulo, que no diga section sino container_title o algo asi AMBOS
+*? ojo con navbar-brand y logotipo, se pueden unificar? (AMBOS)
+* cambiar id="home", no tiene que estar en hero sino en header
+* la navbar hamburguesa que se cierre (copiar de este)
+
+
 agregar autoridad de este proyecto
-ojo con navbar-brand y logotipo, se pueden unificar?
-cambiar nombre sistema de titulo, que no diga section sino container_title o algo asi
-cambiar id="home", no tiene que estar en hero sino en header
-
-
-6️⃣ Profesionales (la parte más delicada)
-
-Tu diseño usa alternancia izquierda/derecha.
-
-CSS:
-
-.lawyer{
-display:grid;
-grid-template-columns:420px 1fr;
-gap:3rem;
-align-items:center;
-margin-bottom:4rem;
-}
-
-.lawyer.reverse{
-grid-template-columns:1fr 420px;
-}
-
-HTML:
-
-<div class="lawyer">
-
-<img src="img/guiraut.jpg">
-
-<div>
-<h3>Ignacio Javier Guiraut</h3>
-<p>Socio fundador...</p>
-</div>
-
-</div>
-7️⃣ Redes (Instagram)
-
-Tu diseño Canva usa grid 3x2.
-
-CSS simple:
-
-.instagram__grid{
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:1rem;
-}
-
-.instagram__grid img{
-width:100%;
-border-radius:8px;
-}
-8️⃣ Contacto con Google Maps
-
-Tu contacto actual ya tiene estructura perfecta.
-
-Solo cambia la imagen lateral por el mapa.
-
-HTML:
-
-<div class="contact__map">
-
-<iframe
-src="https://www.google.com/maps?q=Av%20Corrientes%201234%20CABA&output=embed"
-loading="lazy">
-</iframe>
-
-</div>
-
-CSS:
-
-.contact__map iframe{
-width:100%;
-height:100%;
-min-height:420px;
-border-radius:16px;
-border:0;
-}
+ojo con variable container-limit y otras con nombre con "-", pasar a __
