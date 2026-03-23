@@ -16,17 +16,28 @@ reseñas
 autoridad
 
 *** 
-dias transcurridos: 7 (lunes 16/03 primer dia esquema + dias analisis previos)
+dias trabajaos transcurridos: 8 (lunes 16/03 PROGRAMACION hasta 23/03 + dias analisis previos 14/03)
 
 
 CHEQUEOS 
-* chequear clamp en cosas importantes
-* tipografias: variables
+
+  --fs-sm: clamp(0.8rem, 0.9vw, 0.9rem);
+  --fs-base: clamp(0.95rem, 1.1vw, 1.05rem);
+  --fs-md: clamp(1.1rem, 1.5vw, 1.3rem);
+  --fs-lg: clamp(1.8rem, 2.5vw, 2.2rem);
+  --fs-hero: clamp(2.2rem, 5vw, 4.5rem);
+
+
+* chequear clamp en cosas importantes (chequear que esten estos de arriba y no haya otros)
+* navbar hamburguesa: letras muy grandes
+
+
+
 * Ver botón CTA de la navbar en Bootstrap 
 * mejorar logo y navbar (si es generico cual usar?)
 * navbar muy dorada
 * logo no me gusta como se ve
-* navbar hamburguesa: letras muy grandes
+
 
 
 * seccion redes. boton "cargar mas" en mobile no está centrado.

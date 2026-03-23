@@ -15,6 +15,17 @@
   --color-text-muted: #646667;          /* gris paleta Picker */  
 
   --color-instagram: #0095f6;
+
+  /* fonts */
+  --font-primary: "Inter", sans-serif;
+  --font-secondary: "Playfair Display", serif;  
+
+  /* espacios */
+  --fs-sm: clamp(0.8rem, 0.9vw, 0.9rem);
+  --fs-base: clamp(0.95rem, 1.1vw, 1.05rem);
+  --fs-md: clamp(1.1rem, 1.5vw, 1.3rem);
+  --fs-lg: clamp(1.8rem, 2.5vw, 2.2rem);
+  --fs-hero: clamp(2.2rem, 5vw, 4.5rem);
 }
 
 html {
@@ -28,7 +39,7 @@ html {
 }
 
 body {
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-primary);
   font-optical-sizing: auto;
   background-color: var(--color-bg-main);
   color: var(--color-text-main);  
@@ -37,7 +48,7 @@ body {
 }
 
 p {
-  font-size: clamp(0.95rem, 1.2vw, 1.05rem);
+  font-size: clamp(0.95rem, 1.1vw, 1.05rem);
   color: var(--color-text-main);   
   margin: 0;
   padding: 0;  
@@ -48,8 +59,9 @@ a {
 }
 
 .section {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  /* aire arriba y abajo */
+  /* padding: 5rem 0; */
+  padding: clamp(2.2rem, 5vw, 4.5rem) 0;
 }
 
 .container-limit {
@@ -71,7 +83,7 @@ a {
 .services__heading,
 .employees__heading,
 .contact__item-heading {
-    font-size: 1rem;
+    font-size: clamp(1.1rem, 1.5vw, 1.3rem);
     font-weight: 600;
     letter-spacing: 0.02em;
     line-height: 1.3;
@@ -97,7 +109,7 @@ a {
 
 .section__eyebrow {
   display: block;
-  font-size: clamp(0.75rem, 0.9vw, 0.85rem);  
+  font-size: clamp(1.1rem, 1.5vw, 1.3rem); 
   font-weight: 500;  
   color: var(--color-accent);    
   letter-spacing: 0.2em;
@@ -106,7 +118,7 @@ a {
 }
 
 .section__title {
-  font-family: "Playfair Display", serif;  
+  font-family: var(--font-secondary);
   color: var(--color-text-main);  
   font-size: clamp(1.8rem, 2.5vw, 2.2rem);
   line-height: 1.2;
@@ -114,7 +126,7 @@ a {
 }
 
 .section__description {
-  font-family: "Playfair Display", serif;  
+  font-family: var(--font-secondary);
   font-size: clamp(0.95rem, 1.2vw, 1.05rem);
   color: var(--color-text-main);
   line-height: 1.6;
@@ -124,7 +136,7 @@ a {
   font-size: clamp(0.95rem, 1.2vw, 1.05rem);
   font-weight: 600;
   letter-spacing: 0.02em;  
-
+  padding: 0.9rem 1.8rem;
   border: none;
   border-radius: 8px;
   box-shadow:
@@ -140,7 +152,7 @@ a {
 }
 
 .microtext {
-  font-size: 0.95rem;
+  font-size: clamp(1.8rem, 2.5vw, 2.2rem);
   color: var(--color-text-muted);
   margin-top: 1.5rem;
 }
@@ -187,7 +199,7 @@ a {
   text-shadow: 0 2px 6px rgba(0,0,0,0.45);
   /* para linea debajo del link */
   position:relative;
-  padding-bottom:4px;
+  padding-bottom: 4px;
 }
 
 .custom-navbar .nav-link::after{
@@ -197,7 +209,7 @@ a {
   bottom:0;
 
   width:0;
-  height:2px;
+  height: 2px;
 
   background: var(--color-accent);
   transition:width .25s ease;
@@ -247,14 +259,16 @@ a {
 
 .logotipo {
   width: clamp(2rem, 0.8vw, 2.5rem);
+  width: 3rem;
   height: auto;
   transition: all 0.3s ease;  
 }
 
 .logo-texto {
-  font-family: "Playfair Display", serif;
+  font-family: var(--font-secondary);
   font-weight: 300;  
-  font-size: clamp(0.5rem, 0.5vw, 0.75rem);
+  font-size: clamp(0.95rem, 1.1vw, 1.05rem);
+  /* font-size: 0.75rem; */
   text-transform: uppercase;
   letter-spacing: 0.14em;
   color: var(--color-accent);
@@ -306,8 +320,9 @@ a {
 
 
 .hero__title {
-  font-family: "Playfair Display", serif;  
-  font-size: clamp(4rem, 5vw, 5rem);
+  font-family: var(--font-secondary);  
+  /* font-size: clamp(4rem, 5vw, 5rem); */
+  font-size: clamp(2.2rem, 5vw, 4.5rem);
   font-weight: 600;
   line-height: 1.15;
   color: var(--color-bg-main);
@@ -316,8 +331,8 @@ a {
 }
 
 .hero__subtitle {  
-  font-family: "Playfair Display", serif;    
-  font-size: clamp(1.2rem, 1.8vw, 1.6rem); /* p como h3 */
+  font-family: var(--font-secondary);  
+  font-size: clamp(1.1rem, 1.5vw, 1.3rem);
   font-weight: 400;
   line-height: 1.4;  
   color: var(--color-bg-main); 
@@ -328,7 +343,6 @@ a {
 .btn__hero-cta{
   background: var(--color-accent);
   color: var(--color-primary);       
-  padding: 0.9rem 1.8rem;
 }
 
 
@@ -375,8 +389,9 @@ a {
   filter: brightness(0.9);  
 
   object-fit: cover;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
+  border-radius: 5px;
+  /* border-top-left-radius: 5px;
+  border-top-right-radius: 5px; */
 }
 
 .services__card:hover .services__card-img {
@@ -392,14 +407,14 @@ a {
 .about__grid {
   display: grid;
   grid-template-columns: 1.1fr 1fr;
-  gap: 60px;
+  gap: 3.75rem;
   align-items: center;
 }
 
 .about__content {
   display: flex;
   flex-direction: column;
-  gap: 0.8rem;
+  gap: clamp(0.8rem, 0.9vw, 0.9rem);
   max-width: 650px;
 }
 
@@ -410,7 +425,7 @@ a {
 }
 
 .about__description {
-  font-size: clamp(1rem, 1.2vw, 1.1rem);
+  font-size: clamp(1.1rem, 1.5vw, 1.3rem);
   line-height: 1.7;
   font-weight: 400;    
   color: var(--color-text-main);
@@ -476,7 +491,7 @@ a {
 }
 
 .employees__role {
-  font-size: 0.85rem;
+  font-size: clamp(0.8rem, 0.9vw, 0.9rem);
   color: var(--color-accent);
   margin-bottom: 0.5rem;
 }
@@ -548,7 +563,7 @@ a {
   border-radius: 8px;
   padding: 0.7rem;
   margin-bottom: 1rem;
-  font-size: 0.95rem;
+  font-size: clamp(0.95rem, 1.1vw, 1.05rem);
 }
 
 /* agrupado de nombre y mail del form */
@@ -565,8 +580,6 @@ a {
   width: 100%;
   background: var(--color-accent);
   color: var(--color-bg-white);
-
-  padding: 0.9rem 1.8rem;
 }
 
 /* derecha mapa */
@@ -607,7 +620,7 @@ a {
 }
 
 .divisor__instagram {
-  width: 50%;
+  width: 70%;
   height: 1px;
   background-color: var(--color-text-muted);
   margin: 40px auto;
@@ -616,57 +629,33 @@ a {
 
 .instagram__bar {
   max-width: 900px;
-  margin: 50px auto 0;
+  margin: 3.1rem auto 0;
+  
   display: flex;
+  flex-direction: row;
+  align-items: center;
+
   justify-content: center;
-  align-items: center;
-  gap: 40px;
+  gap: 2.5rem;
 }
 
-/* lado izquierdo */
-.insta__left {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-
-.insta__left img {
+.instagram__bar img {
   width: 70px;
 }
 
-.insta__text strong {
+.instagram__bar strong {
   display: block;
-  font-size: 16px;
+  font-size: clamp(1.1rem, 1.5vw, 1.3rem);
   color: var(--color-primary);
   margin-bottom: 5px;
 }
 
-.insta__text p {
-  font-size: 13px;
+.instagram__bar p {
+  font-size: clamp(0.8rem, 0.9vw, 0.9rem);
   color: var(--color-text-muted);
   line-height: 1.4;
   margin: 0;
   max-width: 350px;
-}
-
-/* lado derecho */
-.insta__right {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 10px;
-}
-
-.insta__handle {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 14px;
-  color: var(--color-text-muted);
-}
-
-.insta__handle img {
-  width: 18px;
 }
 
 .btn__instagram {
@@ -675,7 +664,7 @@ a {
   padding: 10px 28px;
   border-radius: 6px;
   text-decoration: none;
-  font-size: 14px;
+  font-size: clamp(0.8rem, 0.9vw, 0.9rem);
   transition: 0.3s;
 }
 
@@ -693,7 +682,7 @@ a {
 }
 
 .footer__tagline {
-  font-size: clamp(1.2rem, 1.8vw, 1.6rem); /* COMO H3 */
+  font-size: clamp(1.1rem, 1.5vw, 1.3rem);
   font-weight: 400; 
   font-style: italic;
   letter-spacing: 0.5px;  
@@ -702,7 +691,7 @@ a {
 
   text-align: center;
   margin-bottom: 1.5rem;
-  padding-top: 0.8rem;  
+  padding-top: clamp(0.8rem, 0.9vw, 0.9rem);  
 }
 
 .footer__bottom {
@@ -712,10 +701,11 @@ a {
   gap: 1rem;
   opacity: 0.7;
   flex-wrap: wrap;
+  margin: 0 2rem;
 }
 
 .footer__copy {
-  font-size: clamp(0.95rem, 1.2vw, 1.05rem);
+  font-size: clamp(0.95rem, 1.1vw, 1.05rem);
   color: var(--color-bg-main);  
   font-weight: 300;
   text-align: center;
@@ -726,7 +716,7 @@ a {
   display: flex;
   align-items: center;
   gap: 8px;
-  font-size: 14px;  
+  font-size: clamp(0.8rem, 0.9vw, 0.9rem);
 }
 
 .footer__social p {
@@ -782,7 +772,7 @@ a {
     
   /* Espaciado vertical en menú hamburguesa */
   .navbar-nav {
-    gap: 0.8rem;
+    gap: clamp(0.8rem, 0.9vw, 0.9rem);
     padding-top: 1rem;
     padding-bottom: 1rem;
     /* links a la derecha */
@@ -863,11 +853,11 @@ a {
   }
 
   .hero__title {
-    font-size: clamp(1.8rem, 5.5vw, 2.3rem);
+    /* font-size: clamp(1.8rem, 5.5vw, 2.3rem); */
   }
 
   .hero__subtitle {
-    font-size: clamp(1rem, 3.8vw, 1.3rem);
+    font-size: clamp(1.1rem, 1.5vw, 1.3rem);
   }
 
   .btn__hero-cta {
@@ -920,6 +910,7 @@ a {
   .instagram__bar {
     flex-direction: column;
     margin: 2rem;
+    text-align: center;
   }
 
   /* footer MEDIAQUERY */
@@ -927,6 +918,7 @@ a {
   .footer__bottom {
     flex-direction: column;
     text-align: center;
+    gap: 0;
   }
 
   /* pequeña adaptación mobile */
